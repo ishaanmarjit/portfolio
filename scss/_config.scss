@@ -1,0 +1,20 @@
+//variables
+
+$website-width: 1280px;
+//$main-color: #ffbc00;
+$main-color: #b55cff;
+//$light-color: #f4f4f4;
+$light-color: #5e5d5d;
+$medium-color: #ccc;
+
+$dark-color: #333;
+$bg-image: url("../img/pawel2.jpg");
+
+//set text color
+@function set-text-color($color) {
+  @if (lightness($color) >50) {
+    @return #000;
+  } @else {
+    @return #fff;
+  }
+}
